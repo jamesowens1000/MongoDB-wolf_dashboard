@@ -1,0 +1,21 @@
+body{
+    padding: 50px;
+}
+.row{
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+span{
+    width: 100px;
+    margin-right: 25px;
+}
+h2{
+    margin-bottom: 20px;
+}
+form{
+    margin-bottom: 50px;
+}
+.wolf-info{
+    width: 500px;
+    margin-left: 50px;
+}

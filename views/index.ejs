@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wolf Dashboard</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.png"/>
+    </head>
+    <body>
+        <a href="/wolves/new">Add a Wolf</a>
+        <h2>Here are all the Wolves in this pack:</h2>
+        <% for (var x in wolves) { %>
+            <div class="wolf-info">
+                <h5>Name: <a href="/wolves/<%= wolves[x]._id %>"><%= wolves[x].name %></a></h5>
+                <h6>Age: <%= wolves[x].age %></h6>
+                <h6>Fur Color: <%= wolves[x].fur_color %></h6>
+            </div>
+            <hr>
+        <% } %>
+    </body>
+</html>

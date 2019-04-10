@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wolf Dashboard - New</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <a href="/">Back</a>
+        <form  action="/wolves" method="POST">
+            <h2>Add a Wolf to the Pack</h2>
+            <div class="row">
+                <span>Name:</span>
+                <input type="text" name="name" required>
+            </div>
+            <div class="row">
+                <span>Age:</span>
+                <input type="number" name="age" min="1" max="30" required>
+            </div>
+            <div class="row">
+                <span>Fur Color:</span>
+                <select name="fur_color" required>
+                    <option value="Black">Black</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Gray">Gray</option>
+                    <option value="Silver">Silver</option>
+                    <option value="White">White</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="row">
+                <input type="submit" value="Add Wolf!">
+            </div>
+        </form>
+    </body>
+</html>
